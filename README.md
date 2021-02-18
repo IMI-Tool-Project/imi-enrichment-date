@@ -40,25 +40,22 @@
 
 # 利用者向け情報
 
-以下の手順はパッケージアーカイブ `imi-enrichment-date-1.0.0.tgz` を用いて実行します。
-
 ## インストール
 
 以下の手順でインストールします。
 
 ```
-$ npm install imi-enrichment-date-1.0.0.tgz
+$ npm install IMI-Tool-Project/imi-enrichment-date
 ```
 
 ## コマンドラインインターフェイス
 
-`imi-enrichment-date-1.0.0.tgz` にはコマンドラインインターフェイスが同梱されており、
 通常はインストールすると `imi-enrichment-date` コマンドが使用できるようになります。
 
 コマンドラインインターフェイスのファイルの実体は `bin/cli.js` です。
 
 ```
-$ npm install imi-enrichment-date-1.0.0.tgz
+$ npm install IMI-Tool-Project/imi-enrichment-date
 
 # ヘルプの表示
 $ imi-enrichment-date -h
@@ -77,12 +74,12 @@ $ imi-enrichment-date -s R2-1-1 > output.json
 または `npx` を使って以下のようにインストールせずに実行することも可能です。
 
 ```
-$ npx imi-enrichment-date-1.0.0.tgz -s R2-1-1
+$ npx IMI-Tool-Project/imi-enrichment-date -s R2-1-1
 ```
 
 ## Web API
 
-`imi-enrichment-date-1.0.0.tgz` には Web API を提供するサーバプログラムが同梱されています。
+Web API を提供するサーバプログラムが同梱されています。
 
 ### サーバの起動方法
 
@@ -90,7 +87,7 @@ $ npx imi-enrichment-date-1.0.0.tgz -s R2-1-1
 以下のように `bin/server.js` を実行することで起動できます。
 
 ```
-$ npm install imi-enrichment-date-1.0.0.tgz
+$ npm install IMI-Tool-Project/imi-enrichment-date
 $ node node_modules/imi-enrichment-date/bin/server.js
 Usage: node server.js [port number]
 
@@ -148,16 +145,13 @@ console.log(convert("令和元年1月1日"));
 
 # 開発者向け情報
 
-以下の手順はソースコードアーカイブ `imi-enrichment-date-1.0.0.src.tgz` を用いて実行します。
-
 ## 環境構築
 
 以下の手順で環境を構築します。
 
 ```
-$ mkdir imi-enrichment-date
+$ git clone https://github.com/IMI-Tool-Project/imi-enrichment-date.git
 $ cd imi-enrichment-date
-$ tar xvzf /tmp/imi-enrichment-date-1.0.0.src.tgz
 $ npm install
 ```
 
@@ -173,7 +167,7 @@ $ npm test
 
 ## ブラウザビルド(参考情報)
 
-以下の手順を実行するとブラウザで動作する Javascript `dist/imi-enrichment-date.js` が生成されます。
+以下の手順を実行するとブラウザで動作する JavaScript `dist/imi-enrichment-date.js` が生成されます。
 
 ```
 $ cd imi-enrichment-date
